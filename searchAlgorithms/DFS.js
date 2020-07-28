@@ -24,7 +24,7 @@ const depthFirstSearch = (currentMove, explored = {}, iterations = 0) => {
             }
         }
     } else {
-        //if move isn't already explored
+        //if move isn't already explored return nothing
         return;
     }
 }
