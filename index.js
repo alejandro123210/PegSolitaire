@@ -1,8 +1,14 @@
 const deepFirstSearch = require('./searchAlgorithms/DFS');
 const createBoard = require('./boardFunctions/createBoard');
-//gets starting time
+const aStar = require('./searchAlgorithms/AStar');
+
+//timer
 const startTime = new Date();
-//creates the board of height/width 7 and runs DFS on it
-deepFirstSearch(createBoard(7, 2));
-//logs time it took to run DFS
+console.table(createBoard(7, 2));
+
+//serach algorithms
+// deepFirstSearch(createBoard(7, 2));
+aStar(createBoard(7, 2));
+
+//timer
 console.log(` done in ${(new Date() - startTime) / 1000} seconds`)

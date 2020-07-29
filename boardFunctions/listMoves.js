@@ -89,7 +89,7 @@ const listMoves = (board) => {
     }
     //if there are possible moves to make
     if (options.length !== 0) {
-        return options;
+        return [...options];
     }
 }
 
