@@ -11,4 +11,4 @@ console.table(createBoard(7, 2));
 aStar(createBoard(7, 2));
 
 //timer
-console.log(` done in ${(new Date() - startTime) / 1000} seconds`)
+console.log(` done in ${(new Date() - startTime) / 1000} seconds`);
