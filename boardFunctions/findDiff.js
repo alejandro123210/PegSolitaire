@@ -1,3 +1,4 @@
+//this finds the overall difference between 2 2d arrays
 const findDiff = (board1, board2) => {
     var diff = 0;
     for (let y = 0; y < board1.length; y++) {
