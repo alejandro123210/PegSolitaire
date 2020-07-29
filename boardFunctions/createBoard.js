@@ -1,3 +1,4 @@
+//overall size of the board, the size of the corners, and whether or not to generate the ending board
 const createBoard = (size, cornerSize, goal = false) => {
     //the board is a 2d array, created by this function
     var boardArray = [];

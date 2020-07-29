@@ -1,6 +1,7 @@
 const checkForWin = require('../boardFunctions/checkForWin');
 const findDiff = require('../boardFunctions/findDiff');
 const listMoves = require('../boardFunctions/listMoves');
+//the goal board to measure against
 const goal = require('../boardFunctions/createBoard')(7, 2, true);
 const aStar = (board, iterations = 0) => {
     //checks for a win
