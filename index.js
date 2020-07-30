@@ -6,10 +6,10 @@ const aStar = require('./searchAlgorithms/AStar');
 const startTime = new Date();
 
 //serach algorithms
-console.log('running DFS search...');
-deepFirstSearch(createBoard(7, 2));
-// console.log('running A* search...');
-// aStar(createBoard(7, 2));
+// console.log('running DFS search...');
+// deepFirstSearch(createBoard(7, 2));
+console.log('running A* search...');
+aStar(createBoard(7, 2));
 
 //timer
 console.table(createBoard(7, 2));

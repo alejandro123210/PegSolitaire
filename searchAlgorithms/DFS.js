@@ -6,7 +6,7 @@ const depthFirstSearch = (currentMove, explored = {}, iterations = 0) => {
     if (!explored[currentMove]) {
         //checks for a win
         if (checkForWin(currentMove)) {
-            console.table(currentMove);
+            // console.table(currentMove);
             //if win, return true, this will go back up
             //through all the iterations to stop the func
             return true;

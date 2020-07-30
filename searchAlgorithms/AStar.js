@@ -6,7 +6,7 @@ const goal = require('../boardFunctions/createBoard')(7, 2, true);
 const aStar = (board, iterations = 0) => {
     //checks for a win
     if (checkForWin(board)) {
-        console.table(board);
+        // console.table(board);
         return true;
     } else {
         //gets list of all possible moves (without the heuristic)
