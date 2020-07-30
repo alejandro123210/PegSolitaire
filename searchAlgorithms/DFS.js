@@ -19,6 +19,7 @@ const depthFirstSearch = (currentMove, explored = {}, iterations = 0) => {
                 if (depthFirstSearch(nextMoves[move], explored, iterations++)) {
                     //checks if DFS is returning true, then if it is returns it again
                     //this way DFS will stop once it finds a winning board
+                    console.table(nextMoves[move]);
                     return true;
                 };
             }

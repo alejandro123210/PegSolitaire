@@ -27,6 +27,7 @@ const aStar = (board, iterations = 0) => {
         //for every move from lowest to highest cost
         for (let moveObject in possibleMovesWithCost) {
             if (aStar(possibleMovesWithCost[moveObject].move, iterations++)) {
+                console.table(possibleMovesWithCost[moveObject].move);
                 return true;
             };
         }

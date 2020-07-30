@@ -4,11 +4,13 @@ const aStar = require('./searchAlgorithms/AStar');
 
 //timer
 const startTime = new Date();
-console.table(createBoard(7, 2));
 
 //serach algorithms
-// deepFirstSearch(createBoard(7, 2));
-aStar(createBoard(7, 2));
+console.log('running DFS search...');
+deepFirstSearch(createBoard(7, 2));
+// console.log('running A* search...');
+// aStar(createBoard(7, 2));
 
 //timer
+console.table(createBoard(7, 2));
 console.log(` done in ${(new Date() - startTime) / 1000} seconds`);
